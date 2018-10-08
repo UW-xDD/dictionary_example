@@ -1,6 +1,6 @@
 name: DataProject_dictionary
 user: ashley.murphy@rutgers.edu
 knowledge_domain: geology
-case_sensitive: true
+case_sensitive: false
 word_stemming: true
 base_classification: rock
