@@ -1,5 +1,5 @@
 # Overview of "dictionaries" in GeoDeepDive
-Dictionaries in GeoDeepDive are lists of terms, phrases, and/or regular expressions that area of interest to an individual or that are relevant to a domain of inquiry (e.g., biological taxonomic names, mineral names, genes, proteins). After a dictionary is defined and added to GeoDeepDive infrastructure, it has several uses, including:
+Dictionaries in GeoDeepDive are lists of terms, phrases, and/or regular expressions that are of interest to an individual or that are relevant to a domain of inquiry (e.g., biological taxonomic names, mineral names, genes, proteins). After a dictionary is defined and added to GeoDeepDive infrastructure, it has several uses, including:
 
 - identifying and grouping documents, document metadata, and GDD-generated data products (e.g., NLP, OCR) that may be relevant to the dictionary
 - summarization of counts of terms and number of documents containing terms across the entire GDD document library
