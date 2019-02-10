@@ -1,10 +1,12 @@
 # dictionary_example
-Dictionaries are a first class citizen in GeoDeepDive. Gathered from external
-sources, they contain terms that are used to cull and subset articles and
-sentences. Additionally, they may be used as an advanced form of NER tagging.
+Dictionaries in GeoDeepDive are lists of terms, phrases, and/or regular expressions that area of interest to an individual or that are relevant to a domain of inquiry (e.g., biological taxonomic names, mineral names, genes, proteins). After a dictionary is defined and added to GeoDeepDive infrastructure, it has several uses, including:
 
-This repository contains an example of a way to define a github-based
-dictionary.  This has the benefit of being 1. publically accessible to the
+- identifying and grouping documents, document metadata, and GDD-generated data products (e.g., NLP, OCR) that may be relevant to a the dictionary
+- summarization of counts of terms and number of documents containing terms across the entire GDD library
+- providing domain-specific information content to individual term mentions (e.g., "amphibole" is a "mineral", "PRDX6" is a "protein").
+
+This repository contains an example of one way for an individual to define a github-based
+dictionary. This approach has the benefit of being: 1. publically accessible to the
 GeoDeepDive infrastructure and 2. version controlled.
 
 Two files are required at minimum to define the dictionary:
