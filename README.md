@@ -1,17 +1,17 @@
-# Overview of "dictionaries" in GeoDeepDive
-Dictionaries in GeoDeepDive are lists of terms, phrases, and/or regular expressions that are of interest to an individual or that are relevant to a domain of inquiry (e.g., biological taxonomic names, mineral names, genes, proteins). After a dictionary is defined and added to GeoDeepDive infrastructure, it has several uses, including:
+# Overview of "dictionaries" in xDD
+Dictionaries in xDD are lists of terms, phrases, and/or regular expressions that are of interest to an individual or that are relevant to a domain of inquiry (e.g., biological taxonomic names, mineral names, genes, proteins). After a dictionary is defined and added to xDD infrastructure, it has several uses, including:
 
-- identifying and grouping documents, document metadata, and GDD-generated data products (e.g., NLP, OCR) that may be relevant to the dictionary
-- summarization of counts of terms and number of documents containing terms across the entire GDD document library
+- identifying and grouping documents, document metadata, and xDD-generated data products (e.g., NLP, OCR) that may be relevant to the dictionary
+- summarization of counts of terms and number of documents containing terms across the entire xDD document library
 - providing additional information content to individual term mentions (e.g., "amphibole" is a "mineral", "PRDX6" is a "protein").
 
-After dictionaries are created on GeoDeepDive infrastructure, dictionary statistics, summary of counts for terms within dictionaries, and other functionality is automatically made publically available by the GeoDeepDive REST-ful API. For example, to retrieve basic information about all dictionaries as a JSON object: 
+After dictionaries are created on xDD infrastructure, dictionary statistics, summary of counts for terms within dictionaries, and other functionality is automatically made publically available by the xDD REST-ful API. For example, to retrieve basic information about all dictionaries as a JSON object: 
 
-```https://geodeepdive.org/api/dictionaries?all```
+```https://xdd.wisc.edu/api/dictionaries?all```
 
 To retrieve counts of all mentions of terms in a specific dictionary as a JSON object:
 
-```https://geodeepdive.org/api/dictionaries?dict=minerals&show_terms=true```
+```https://xdd.wisc.edu/api/dictionaries?dict=minerals&show_terms=true```
 
 To retrieve more detailed statistics for counts of terms within a dictionary as a JSON object:
 
@@ -19,15 +19,15 @@ To retrieve more detailed statistics for counts of terms within a dictionary as 
 
 To retrieve "snippets" of text around individual mentions of a dictionary term as a JSON object, with each mention highlighed using HTML entities:
 
-```https://geodeepdive.org/api/snippets?term=Abelsonite```
+```https://xdd.wisc.edu/api/snippets?term=Abelsonite```
 
-(Note that there are default limits on the returned number of documents and snippets within each document. To override these limits and define the number of documents and snippets to return, parameterize the API URL, as described here: ```https://geodeepdive.org/api/snippets```).
+(Note that there are default limits on the returned number of documents and snippets within each document. To override these limits and define the number of documents and snippets to return, parameterize the API URL, as described here: ```https://xdd.wisc.edu/api/snippets```).
 
 ## Defining a dictionary using this repo.
 
 This repository contains an example of one way for an individual to define a github-based
-dictionary of terms for use within GeoDeepDive. This approach has the benefit of being: 1. publically accessible to the
-GeoDeepDive infrastructure and 2. version controlled.
+dictionary of terms for use within xDD. This approach has the benefit of being: 1. publically accessible to the
+xDD infrastructure and 2. version controlled.
 
 Two files are required at minimum to define the dictionary:
 
@@ -64,7 +64,7 @@ For example, an entry of:
 Homo sapiens,Mammalia,Primates,Hominidae
 ```
 Will create a dictionary entry of "Homo sapiens", index all documents and
-mentions of "Home sapiens" in the GeoDeepDive corpus, and track whether
+mentions of "Home sapiens" in the xDD corpus, and track whether
 mentions of one of [Mammalia, Primates, Hominidae] are also be mentioned within
 a document to be considered a match.
 
@@ -81,6 +81,6 @@ To create your own dictionary of indexed terms within the GeoDeepDive infrastruc
        term will still occur -- the supplemental terms just provide an optional
        level of filtering.
     4. Once your changes are complete, send a pull request. This will trigger
-       the GeoDeepDive infrastructure to add your dictionary and begin the
+       the xDD infrastructure to add your dictionary and begin the
        indexing process.
     5. You will get an email when the dictionary is fully indexed.
