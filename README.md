@@ -70,7 +70,7 @@ a document to be considered a match.
 
 # Instructions
 
-To create your own dictionary of indexed terms within the GeoDeepDive infrastructure:
+To create your own dictionary of indexed terms within the xDD infrastructure:
 
     1. Fork this repository into your own repository.
     2. Update the config.yaml file with the attributes prescribed above.
