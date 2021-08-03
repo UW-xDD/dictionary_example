@@ -35,20 +35,25 @@ Two files are required at minimum to define the dictionary:
 The configuration for the dictionary. Attributes must include:
 
 **name (string)** : Name of the dictionary
+
 **user (string)** : Your preferred email. We will send an email when indexing
 is complete.
+
 **knowledge_domain (string)** : General domain of the list of terms provided.
 For example, a list of taxa may have a domain of *biology*. A dictionary of
 elementary particle types may have a domain of *physics* or *particle physics*.
+
 **case_sensitive (bool)** : Whether or not case matters for the terms. If
 case_sensitive is true, then capitalization of words matters.
-**word_stemming (bool) **: Whether or not words should be stemmed before
+
+**word_stemming (bool)**: Whether or not words should be stemmed before
 matching is considered. If true, word stemming is applied and the effect is
 that the matching is looser. For example, "cretaceous" and "cretacallis" both
 have word stemmings of "cretac". As a general rule, if you want to find proper
 nouns as terms, word stemming should be false. If you want matching to include
 variants of a word (pluralizations, verbified nouns, etc), word_stemming should
 be true.
+
 **base_classification (string)** : General category or classification of terms contained in dictionary
 
 ## dictionary.csv
