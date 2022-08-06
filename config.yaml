@@ -1,6 +1,6 @@
-name: example_dictionary
-user: name@domain.com
-knowledge_domain: transportation
+name: covid19
+user: peters@geology.wisc.edu
+knowledge_domain: biomedicine
 case_sensitive: true
 word_stemming: false
-base_classification: car
+base_classification: virus

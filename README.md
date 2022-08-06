@@ -15,7 +15,7 @@ To retrieve counts of all mentions of terms in a specific dictionary as a JSON o
 
 To retrieve more detailed statistics for counts of terms within a dictionary as a JSON object:
 
-```https://geodeepdive.org/api/terms?dictionary=minerals```
+```https://xdd.wisc.edu/api/terms?dictionary=minerals```
 
 To retrieve "snippets" of text around individual mentions of a dictionary term as a JSON object, with each mention highlighed using HTML entities:
 
